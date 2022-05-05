@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "boedhack99/kernel_xiaomi_spes",
-    "target_path": "kernel/xiaomi/spes",
+    "repository": "eun0115/kernel_xiaomi_fog",
+    "target_path": "kernel/xiaomi/fog",
     "revision": "main"
   }
 ]

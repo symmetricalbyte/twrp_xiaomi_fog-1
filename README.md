@@ -1,1 +1,1 @@
-# device_xiaomi_spes-TWRP
+# twrp_xiaomi_spes
