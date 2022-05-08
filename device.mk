@@ -65,7 +65,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/bootctrl
+    hardware/qcom-caf/bootctrl \
+	vendor/qcom/opensource/commonsys-intf/display
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -80,9 +81,6 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/commonsys-intf/display
-
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Crypto
@@ -95,7 +93,15 @@ PLATFORM_VERSION := 127
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
-TARGET_RECOVERY_DEVICE_MODULES += libion libandroidicu vendor.display.config@1.0 vendor.display.config@2.0 libdisplayconfig.qti vendor.qti.hardware.vibrator.service vendor.qti.hardware.vibrator.impl libqtivibratoreffect
+TARGET_RECOVERY_DEVICE_MODULES += \
+	libion \
+	libandroidicu \
+	vendor.display.config@1.0 \
+	vendor.display.config@2.0 \
+	libdisplayconfig.qti \
+	vendor.qti.hardware.vibrator.service \
+	vendor.qti.hardware.vibrator.impl \
+	libqtivibratoreffect
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
