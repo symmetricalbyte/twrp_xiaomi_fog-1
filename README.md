@@ -1,7 +1,7 @@
 Device configuration for Xiaomi Redmi 10C
 =========================================
 
-The Xiaomi Redmi 10C (codenamed _"fog"_) is a budget smartphone from Xiaomi.
+The Xiaomi Redmi 10C (codenamed _"fog"_) is a entry-level smartphone from Xiaomi.
 
 Announced & released in March 2022.
 
